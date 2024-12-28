@@ -134,6 +134,9 @@ realistic image with the following structure:
     - Output Padding: 1
     - Activation: Tanh (to scale pixel values between -1 and 1).
 
+#### Generator in AlexNet style
+![Generator in AlexNet style](./figures/generator.svg)
+
 #### 5.1.2. Discriminator Architecture
 
 The discriminator takes an image (real or fake) and classifies it as real
@@ -174,12 +177,17 @@ or fake using a series of convolutional layers:
     - Activation: Leaky ReLU
     - Activation: None (raw logits used with nn.BCEWithLogitsLoss)
 
+#### Discriminator in AlexNet style
+![Discriminator in AlexNet style](./figures/discriminator.svg)
+
 ### 5.2. Autoencoder
 
 An Autoencoder consists of two main components: an Encoder and a Decoder.
 The Encoder compresses an input image into a lower-dimensional latent
 representation, and the Decoder reconstructs the original image from
 this representation.
+
+![Autoencoder in AlexNet style](./figures/autoencoder.jfif)
 
 #### 5.2.1. Encoder Architecture
 
@@ -213,6 +221,9 @@ latent representation. Layer-by-Layer Breakdown:
     - Output: (batch_size, 7)
     - Activation: None (raw features for representation in latent space)
 
+#### Encoder in AlexNet style
+![Encoder in AlexNet style](./figures/encoder.svg)
+
 #### 5.2.2. Decoder Architecture
 
 The Encoder compresses an input image of size (batch_size, 1, 28, 28). Layer-by-Layer Breakdown:
@@ -241,6 +252,9 @@ The Encoder compresses an input image of size (batch_size, 1, 28, 28). Layer-by-
     - Stride: 2
     - Padding: 1
     - Activation: Tanh (to scale pixel values between -1 and 1)
+
+#### Decoder in AlexNet style
+![Decoder in AlexNet style](./figures/decoder.svg)
 
 This architecture captures the structure of the Autoencoder, where the Encoder compresses the input image into a latent vector, and the Decoder reconstructs the image from this representation.
 
