@@ -398,3 +398,5 @@ The repository successfully implements and trains two foundational architectures
     - DCGAN is ideal for creative AI tasks such as generating artwork, synthetic data, or data augmentation.
     - Autoencoders are more suitable for analytical tasks like anomaly detection, feature extraction, and noise reduction.
     - Together, these models offer valuable insights into deep learning's capabilities for both data generation and data reconstruction. Future work could explore variational autoencoders (VAEs), conditional GANs (cGANs), or hybrid approaches combining both architectures for enhanced outcomes.
+ 
+Link to the presentation slides: https://docs.google.com/presentation/d/165uwqMMNUF4CFsUGTg89HzWFg6btefmABmVciO-MriI/edit?usp=sharing
